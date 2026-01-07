@@ -1,25 +1,41 @@
-# Catálogo de Filmes Frontend
+# 🎬 Catálogo de Filmes — Frontend
 
-Frontend do projeto **Catálogo de Filmes**, desenvolvido em **Vue.js** com **Vite**, consumindo a API do backend via proxy.
+Frontend da aplicação **Catálogo de Filmes**, desenvolvido em **Vue.js 3** com **Vite**, consumindo uma **API REST** do backend via proxy.
 
-Este serviço é responsável pela interface de busca de filmes e gerenciamento de favoritos.
+Este projeto é responsável pela interface de busca de filmes, exibição de resultados e gerenciamento visual de favoritos.
 
 ---
 
-## 🚀 Executar o Frontend
+## 🚀 Executar o Frontend (Docker Compose)
 
 > Antes de iniciar o frontend, certifique-se de que o **Backend já esteja rodando**.
 
-Na raiz do projeto, execute os comandos abaixo:
+Na raiz do projeto frontend, execute:
 
-```
-bash
-docker build -t catalogo-filmes-frontend .
-docker run -d --name catalogo-filmes-frontend --network backend_default -p 5173:5173 catalogo-filmes-frontend
-```
-Aplicação frontend desenvolvida como SPA (Single Page Application), responsável pela interface do usuário e consumo da API do backend.
+docker-compose up -d
 
-## Tecnologias utilizadas
+A aplicação ficará disponível em:
+http://127.0.0.1:5173
+
+---
+
+## ⚙️ Executar em modo desenvolvimento (sem Docker)
+
+1. Acesse a pasta frontend  
+2. Instale as dependências  
+3. Inicie o servidor de desenvolvimento  
+
+Comandos:
+
+npm install  
+npm run dev  
+
+A aplicação ficará disponível em:
+http://127.0.0.1:5173
+
+---
+
+## 🚀 Tecnologias utilizadas
 
 - Vue.js 3
 - JavaScript
@@ -27,9 +43,13 @@ Aplicação frontend desenvolvida como SPA (Single Page Application), responsáv
 - Axios
 - Vue Router
 - Pinia
+- Docker
+- Docker Compose
 
-## Estrutura do projeto
-```
+---
+
+## 📁 Estrutura do projeto
+
 frontend/
 ├── public/
 ├── src/
@@ -43,9 +63,13 @@ frontend/
 │   └── main.js
 ├── index.html
 ├── package.json
-└── vite.config.js
-```
-## Funcionalidades
+├── vite.config.js
+├── Dockerfile
+└── docker-compose.yml
+
+---
+
+## ⭐ Funcionalidades
 
 - Interface para busca de filmes
 - Listagem de resultados
@@ -53,12 +77,15 @@ frontend/
 - Gerenciamento visual de favoritos
 - Comunicação com backend via API REST
 
-## Como executar
+---
 
-1. Acesse a pasta frontend
-2. Execute npm install
-3. Execute npm run dev
+## 📌 Observações
 
-O frontend ficará disponível em http://127.0.0.1:5173
+- O backend deve estar em execução para o funcionamento completo da aplicação
+- Este frontend consome uma API desenvolvida em Laravel (repositório separado)
 
-O backend deve estar em execução para funcionamento completo da aplicação.
+---
+
+## 🔗 Repositório
+
+https://github.com/EduardoSteigleder/catalogo-filmes-frontend
