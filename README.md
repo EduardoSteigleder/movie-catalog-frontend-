@@ -18,23 +18,6 @@ A aplicação ficará disponível em:
 http://127.0.0.1:5173
 
 ---
-
-## ⚙️ Executar em modo desenvolvimento (sem Docker)
-
-1. Acesse a pasta frontend  
-2. Instale as dependências  
-3. Inicie o servidor de desenvolvimento  
-
-Comandos:
-```
-npm install  
-npm run dev  
-```
-A aplicação ficará disponível em:
-http://127.0.0.1:5173
-
----
-
 ## 🚀 Tecnologias utilizadas
 
 - Vue.js 3
@@ -85,7 +68,3 @@ frontend/
 - Este frontend consome uma API desenvolvida em Laravel (repositório separado)
 
 ---
-
-## 🔗 Repositório
-
-https://github.com/EduardoSteigleder/catalogo-filmes-frontend
