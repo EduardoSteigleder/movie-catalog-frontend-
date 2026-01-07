@@ -1,5 +1,22 @@
-# Frontend - Catálogo de Filmes
+# Catálogo de Filmes Frontend
 
+Frontend do projeto **Catálogo de Filmes**, desenvolvido em **Vue.js** com **Vite**, consumindo a API do backend via proxy.
+
+Este serviço é responsável pela interface de busca de filmes e gerenciamento de favoritos.
+
+---
+
+## 🚀 Executar o Frontend
+
+> Antes de iniciar o frontend, certifique-se de que o **Backend já esteja rodando**.
+
+Na raiz do projeto, execute os comandos abaixo:
+
+```
+bash
+docker build -t catalogo-filmes-frontend .
+docker run -d --name catalogo-filmes-frontend --network backend_default -p 5173:5173 catalogo-filmes-frontend
+```
 Aplicação frontend desenvolvida como SPA (Single Page Application), responsável pela interface do usuário e consumo da API do backend.
 
 ## Tecnologias utilizadas
