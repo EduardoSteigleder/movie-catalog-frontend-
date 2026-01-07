@@ -49,7 +49,7 @@ http://127.0.0.1:5173
 ---
 
 ## 📁 Estrutura do projeto
-
+```
 frontend/
 ├── public/
 ├── src/
@@ -66,7 +66,7 @@ frontend/
 ├── vite.config.js
 ├── Dockerfile
 └── docker-compose.yml
-
+```
 ---
 
 ## ⭐ Funcionalidades
